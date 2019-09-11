@@ -23,12 +23,12 @@ module.exports = {
       {
         test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
         use: {
-          loader: 'file-loader',
+          loader: "url-loader",
           options: {
-            limit: 90000,
-            name: "[hash].[ext]",
-            outputPath: "images"
-
+            limit: 1000,
+            name: "[hash].[name].[ext]",
+            outputPath: "assets",
+            publicPath: '../assets'
           }
         }
       }

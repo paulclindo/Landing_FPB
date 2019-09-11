@@ -22,6 +22,15 @@ module.exports = {
   },
   module: {
     rules: [{
+        test: /\.html$/,
+        use: [{
+          loader: 'html-loader',
+          options: {
+            minimize: true
+          }
+        }]
+      },
+      {
         test: /\.css$/,
         use: [{
             loader: MiniCssExtractPlugin.loader
@@ -34,8 +43,8 @@ module.exports = {
         use: {
           loader: "url-loader",
           options: {
-            limit: 1000,
-            name: "[hash].[ext]",
+            limit: 9000,
+            name: "[hash].[name].[ext]",
             outputPath: "assets",
             publicPath: '../assets'
           }
