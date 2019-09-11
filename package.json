@@ -1,0 +1,33 @@
+{
+  "name": "RA_PISOGERENCIAL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack-dev-server --config ./webpack.config.js",
+    "build:pro": "webpack --config ./prod.webpack.config.js  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "3.2.0",
+    "file-loader": "4.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "normalize.css": "8.0.1",
+    "style-loader": "1.0.0",
+    "url-loader": "2.1.0",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "axios": "^0.19.0",
+    "clean-webpack-plugin": "3.0.0",
+    "micromodal": "^0.4.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "terser-webpack-plugin": "2.0.1"
+  }
+}
