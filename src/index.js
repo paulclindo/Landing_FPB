@@ -4,7 +4,6 @@ import "./Micromodal.css"
 import anime from 'animejs/lib/anime.es.js'
 import Micromodal from "micromodal"
 import Social from "./social"
-Social()
 
 
 Micromodal.init({
@@ -87,6 +86,7 @@ previousButton.onclick = function (event) {
 
 
 window.onload = function () {
+  Social()
 
   $loader.style.opacity = 0
   $content.style.opacity = 1

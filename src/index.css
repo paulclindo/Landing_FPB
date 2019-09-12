@@ -220,7 +220,7 @@ p {
 }
 
 .Hero__mini--image {
-  margin: 0 1em;
+  /* margin: 0 1em; */
   cursor: pointer;
   transform-style: preserve-3d;
 
@@ -229,12 +229,13 @@ p {
 .Hero__mini img {
   filter: grayscale(1);
   transition: .8s;
-  width: 500px;
+  /* width: 500px; */
+  transform: scale(.9);
 }
 
 .Hero__mini img:hover {
   filter: grayscale(0);
-  transform: scale(1.05);
+  transform: scale(1);
   box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
 }
 
