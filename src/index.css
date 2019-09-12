@@ -184,10 +184,8 @@ p {
   min-height: calc(100vh - 180px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
   color: white;
   position: relative;
-  align-items: center;
   z-index: 8;
   opacity: 0;
 
@@ -201,7 +199,7 @@ p {
   overflow: hidden;
   opacity: 0;
   white-space: nowrap;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -211,7 +209,7 @@ p {
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; */
 
 }
 
@@ -295,7 +293,8 @@ button svg {
   width: 80%;
   text-align: left;
   text-shadow: 2px 2px #32752a14;
-  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
 }
 
 form {
