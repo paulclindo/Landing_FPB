@@ -229,7 +229,6 @@ p {
 .Hero__mini img {
   filter: grayscale(1);
   transition: .8s;
-  /* width: 500px; */
   transform: scale(.9);
 }
 
